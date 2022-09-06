@@ -1,0 +1,12 @@
+2022-09-06 01:29:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" not found (this database is empty); SQL statement:
+select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.email as email3_0_, employee0_.name as name4_0_ from employee employee0_ [42104-214]
+2022-09-06 01:32:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEE" not found (this database is empty); SQL statement:
+select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.email as email3_0_, employee0_.name as name4_0_ from employee employee0_ [42104-214]
+2022-09-06 01:39:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES" not found (this database is empty); SQL statement:
+select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.email as email3_0_, employee0_.name as name4_0_ from employees employee0_ [42104-214]
+2022-09-06 01:41:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "EMPLOYEES" not found (this database is empty); SQL statement:
+select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.email as email3_0_, employee0_.name as name4_0_ from employees employee0_ [42104-214]
