@@ -1,6 +1,8 @@
 package com.siemens.eams.employee.domain;
 
-import org.springframework.data.repository.CrudRepository; 
-public interface EmployeeRepository extends CrudRepository<Employee, Integer>{
+import java.util.List;
 
+import org.springframework.data.repository.CrudRepository; 
+public interface EmployeeRepository extends CrudRepository<Employee, Long>{
+	List<Employee> findAll();
 }

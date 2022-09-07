@@ -1,6 +1,7 @@
 package com.siemens.eams.employee.service;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,12 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public List<Employee> getAllEmployees()   
 	{  
 	List<Employee> empList = new ArrayList<Employee>();  
-	empRepo.findAll().forEach(emp -> empList.add(emp));  
+	Iterable<Employee> emp = empRepo.findAll();
+	System.out.println("23432444444443-------"+emp);
+	Iterator it = emp.iterator();
+	while (it.hasNext()) {
+			empList.add((Employee)it.next());
+		}
 	return empList;  
 	}  
 	 

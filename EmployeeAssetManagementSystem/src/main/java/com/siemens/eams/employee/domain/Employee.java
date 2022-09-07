@@ -8,44 +8,88 @@ import javax.persistence.Table;
 @Entity
 //defining class name as Table name
 @Table(name = "EMPLOYEES")
-public class Employee 
+public class Employee extends AbstractEntity	
 {
 //mark id as primary key
 @Id
-//defining id as column name
-@Column
+@Column(name="EMP_ID")
 private int id;
-//defining name as column name
-@Column
-private String name;
-//defining age as column name
-@Column
-private int age;
-//defining email as column name
-@Column
+
+
+@Column(name="FIRST_NAME")
+private String firstName;
+
+@Column(name="LAST_NAME")
+private String lastName;
+
+@Column(name="EMAIL")
 private String email;
+
+@Column(name="PASSWD")
+private String password;
+
+@Column(name="ORG_ID")
+private int orgid;
+
+@Column(name="ASSET_ID")
+private int assetId ;
+
+
 public int getId() {
 	return id;
 }
+
 public void setId(int id) {
 	this.id = id;
 }
-public String getName() {
-	return name;
+
+public String getFirstName() {
+	return firstName;
 }
-public void setName(String name) {
-	this.name = name;
+
+public void setFirstName(String firstName) {
+	this.firstName = firstName;
 }
-public int getAge() {
-	return age;
+
+public String getLastName() {
+	return lastName;
 }
-public void setAge(int age) {
-	this.age = age;
+
+public void setLastName(String lastName) {
+	this.lastName = lastName;
 }
+
 public String getEmail() {
 	return email;
 }
+
 public void setEmail(String email) {
 	this.email = email;
 }
+
+public String getPassword() {
+	return password;
+}
+
+public void setPassword(String password) {
+	this.password = password;
+}
+
+public int getOrgid() {
+	return orgid;
+}
+
+public void setOrgid(int orgid) {
+	this.orgid = orgid;
+}
+
+public int getAssetId() {
+	return assetId;
+}
+
+public void setAssetId(int assetId) {
+	this.assetId = assetId;
+}
+
+
 }

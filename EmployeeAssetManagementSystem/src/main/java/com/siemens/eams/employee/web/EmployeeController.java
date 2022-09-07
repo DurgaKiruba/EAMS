@@ -16,7 +16,7 @@ public class EmployeeController {
 	EmployeeService empService;  
 	//creating a get mapping that retrieves all the students detail from the database   
 	@GetMapping("/getEmployee")  
-	private List<Employee> getAllStudent()   
+	private List<Employee> getAllEmployees()   
 	{  
 	return empService.getAllEmployees();  
 	}  
